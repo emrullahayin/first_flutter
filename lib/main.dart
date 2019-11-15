@@ -2,5 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:first_flutter/screens/home.dart';
 
 void main() {
-  runApp(Home());
+  runApp(MaterialApp(
+    home: Home(),
+  ));
 }

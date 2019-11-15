@@ -17,13 +17,19 @@ class Home extends StatelessWidget {
                   Text(
                     "Dell notebook: ",
                     textDirection: TextDirection.ltr,
-                    style: TextStyle(fontSize: 20.0),
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        decoration: TextDecoration.none,
+                        color: Colors.white),
                   ),
                   Expanded(
                     child: Text(
                       "İ7 8750H GT1050Ti",
                       textDirection: TextDirection.ltr,
-                      style: TextStyle(fontSize: 20.0),
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          decoration: TextDecoration.none,
+                          color: Colors.white),
                     ),
                   )
                 ],
@@ -34,13 +40,19 @@ class Home extends StatelessWidget {
                   Text(
                     "Asus notebook: ",
                     textDirection: TextDirection.ltr,
-                    style: TextStyle(fontSize: 20.0),
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        decoration: TextDecoration.none,
+                        color: Colors.white),
                   ),
                   Expanded(
                     child: Text(
                       "İ3 7700HQ Intel",
                       textDirection: TextDirection.ltr,
-                      style: TextStyle(fontSize: 20.0),
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          decoration: TextDecoration.none,
+                          color: Colors.white),
                     ),
                   )
                 ],
@@ -62,10 +74,21 @@ class OrderButton extends StatelessWidget {
       margin: EdgeInsets.only(top: 50.0),
       child: RaisedButton(
         child: Text("Go to checkout"),
-        onPressed: () {},
+        onPressed: () {
+          order(context);
+        },
         elevation: 5.0,
       ),
     );
     return button;
   }
+}
+
+order(BuildContext context) {
+  var alert = AlertDialog(
+    title: Text("Go to checkout"),
+    content: Text("I will goto checkout"),
+  );
+
+  showDialog(context: context, builder: (BuildContext context) => alert);
 }
