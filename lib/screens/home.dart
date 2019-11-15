@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
                   ),
                   Expanded(
                     child: Text(
-                      "İ7 8750H GT1050Ti",
+                      "İ7 8750H GT1050Ti 15' LED PANEL 16 GB RAM ",
                       textDirection: TextDirection.ltr,
                       style: TextStyle(
                           fontSize: 20.0,
