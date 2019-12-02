@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return DialogBox();
-  }
+  State<StatefulWidget> createState() => DialogBox();
 }
 
 class DialogBox extends State<Home> {
@@ -24,9 +22,21 @@ class DialogBox extends State<Home> {
               });
             },
           ),
-          Text("Hello: "+ Name)
+          Text("Hello: " + Name)
         ],
       ),
     );
+  }
+}
+
+class CitySelectorWidget extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => CitySelectorState();
+}
+
+class CitySelectorState extends State<CitySelectorWidget>{
+  @override
+  Widget build(BuildContext context) {
+    return null;
   }
 }
